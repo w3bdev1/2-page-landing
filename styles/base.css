@@ -14,6 +14,11 @@
     --color-primary: #ff7b54;
     --color-text-on-primary: #ffffff;
     --font-family: Inter, sans-serif;
+
+    --btn-primary-bg: var(--color-text-on-primary);
+    --btn-primary-txt: var(--color-primary);
+    --btn-secondary-bg: var(--color-primary);
+    --btn-secondary-txt: var(--color-text-on-primary);
 }
 
 * {
@@ -56,4 +61,43 @@ a {
 
 .nav__list--item {
     margin-inline-end: 40px;
+}
+
+.btn-container {
+    display: flex;
+    margin-block-start: 100px;
+}
+
+.btn {
+    font-size: 32px;
+    font-weight: bold;
+    border: 4px solid var(--btn-primary-bg);
+    height: 100px;
+    padding-inline: 64px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: outline .2s linear;
+}
+
+.btn:hover,
+.btn:focus {
+    outline: 2px solid var(--btn-primary-bg);
+}
+
+.btn:not(.btn:last-of-type) {
+    margin-inline-end: 20px;
+}
+
+.btn--primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-txt);
+}
+
+.btn--secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-txt);
+}
+
+.btn__img {
+    vertical-align: middle;
 }
