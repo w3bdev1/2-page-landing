@@ -1,7 +1,19 @@
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Bold.ttf);
+    font-weight: bold;
+}
+
 body {
     background-color: #ff7b54;
-    color: #fff;
-    font-family: Inter;
+    color: #ffffff;
+    font-family: Inter, sans-serif;
 }
 
 a {
