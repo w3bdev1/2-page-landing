@@ -26,3 +26,28 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 34px;
+    align-items: center;
+    padding-inline: 40px;
+}
+
+header>a {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav {
+    justify-self: end;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+}
+
+nav>ul>li {
+    margin-inline-end: 40px;
+}
