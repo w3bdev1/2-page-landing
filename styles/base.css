@@ -13,6 +13,7 @@
 :root {
     --color-primary: #ff7b54;
     --color-text-on-primary: #ffffff;
+    --color-text-on-secondary: #000000;
     --font-family: Inter, sans-serif;
 
     --btn-primary-bg: var(--color-text-on-primary);
@@ -74,6 +75,10 @@ a {
 
 .cart--primary g path {
     fill: var(--color-primary);
+}
+
+.main {
+    padding: 150px;
 }
 
 .btn-container {

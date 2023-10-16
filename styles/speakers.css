@@ -1,1 +1,38 @@
 @import './base.css';
+
+.speakers .main__heading {
+    font-size: 98px;
+    font-weight: bold;
+}
+
+.speaker__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
+    margin-top: 150px;
+}
+
+.speaker__img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.speaker__img--top {
+    object-position: top;
+}
+
+.speaker__name {
+    margin-block-start: 36px;
+}
+
+.speaker__company {
+    margin-block-start: 20px;
+    color: var(--color-text-on-secondary);
+}
+
+.speaker__bio {
+    margin-block-start: 32px;
+    color: var(--color-text-on-secondary);
+    max-width: 300px;
+}
