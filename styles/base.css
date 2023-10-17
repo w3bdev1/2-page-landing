@@ -76,6 +76,7 @@ a {
 
 .nav__list--item {
     margin-inline-end: 40px;
+    cursor: pointer;
 }
 
 .cart--primary g path {
@@ -131,6 +132,16 @@ a {
 
 .none {
     display: none;
+}
+
+footer {
+    text-align: center;
+    padding-block-end: 10px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @media (width < 996px) {
