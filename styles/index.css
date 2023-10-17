@@ -1,10 +1,47 @@
 @import './base.css';
 
 .home .main__heading {
-    font-size: 128px;
+    font-size: 98px;
     font-weight: bold;
 }
 
 .home .main__subheading {
     font-size: 40px;
+}
+
+
+@media (width < 996px) {
+
+    .home .main__heading {
+        font-size: 72px;
+    }
+
+
+    .home .main__subheading {
+        font-size: 36px;
+    }
+
+}
+
+@media (width < 815px) {
+
+    .home .main__heading {
+        font-size: 60px;
+    }
+
+    .home .main__subheading {
+        font-size: 24px;
+    }
+
+}
+
+@media (width < 600px) {
+
+    .home .main__heading {
+        font-size: 36px;
+    }
+
+    .home .main__subheading {
+        font-size: 18px;
+    }
 }

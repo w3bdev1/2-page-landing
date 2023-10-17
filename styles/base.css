@@ -60,6 +60,11 @@ a {
     font-weight: bold;
 }
 
+.menu,
+.close {
+    cursor: pointer;
+}
+
 .nav {
     justify-self: end;
 }
@@ -90,8 +95,8 @@ a {
     font-size: 32px;
     font-weight: bold;
     border: 4px solid var(--btn-primary-bg);
-    height: 100px;
-    padding-inline: 64px;
+    height: 90px;
+    padding-inline: 54px;
     cursor: pointer;
     white-space: nowrap;
     transition: outline .2s linear;
@@ -118,4 +123,123 @@ a {
 
 .btn__img {
     vertical-align: middle;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+@media (width < 996px) {
+
+    .btn {
+        font-size: 24px;
+        height: 72px;
+        padding-inline: 48px;
+    }
+}
+
+@media (width < 815px) {
+
+    .main {
+        padding: 100px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .body--primary .menu path {
+        fill: var(--color-text-on-primary);
+    }
+
+    .body--secondary .menu path {
+        fill: var(--color-primary);
+    }
+
+    .body--primary .close path {
+        fill: var(--color-text-on-primary);
+    }
+
+    .body--secondary .close path {
+        fill: var(--color-primary);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 33px 1fr 34px;
+        align-items: center;
+    }
+
+    .header__link {
+        justify-self: center;
+    }
+
+    .btn {
+        font-size: 24px;
+        height: 72px;
+        padding-inline: 48px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .btn:not(.btn:last-of-type) {
+        margin-inline-end: 0;
+    }
+
+    .nav {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 100px);
+        transition: left .2s ease-in;
+    }
+
+    .body--primary .nav {
+        background-color: var(--color-primary);
+    }
+
+    .body--secondary .nav {
+        background-color: var(--color-text-on-primary);
+    }
+
+    .nav__list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 50px;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .nav__list--item {
+        margin-inline-end: 0px;
+        padding-block: 15px;
+    }
+
+    .nav__list--item:hover,
+    .nav__list--item:focus {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (width <600px) {
+    .main {
+        padding: 50px;
+    }
 }
